@@ -1,77 +1,65 @@
-Admin User Management Panel
+# 🛠️ Admin User Management Panel – Node.js + Express
 
-A simple Node.js + Express backend for managing users with JWT authentication and admin-only access.
+A simple Node.js + Express backend for managing users with **JWT authentication** and **admin-only access**.
 
-This backend allows an admin to view users, delete users, and protect routes using JWT + middleware.
+This backend allows an admin to **view users**, **delete users**, and **protect routes** using JWT + middleware.
 
-Features
+---
 
-JWT authentication (jwtExistMiddleware)
+## 🚀 Features
 
-Admin-only routes (protectedAdmin)
+- **JWT Authentication** (`jwtExistMiddleware`)  
+- **Admin-only routes** (`protectedAdmin`)  
+- **List all users** (`GET /admin`)  
+- **Delete user by ID** (`DELETE /admin/:id`)  
+- Clean and responsive API design  
+- Ready to connect with frontend  
 
-List all users (GET /admin)
+---
 
-Delete user by ID (DELETE /admin/:id)
+## 📡 Routes
 
-Clean and responsive API design
+### Admin Routes
 
-Ready to connect with frontend
+| Method | Route        | Middleware                          | Description                     |
+|--------|-------------|------------------------------------|---------------------------------|
+| GET    | /admin      | jwtExistMiddleware, protectedAdmin | Get all users (admin only)      |
+| DELETE | /admin/:id  | jwtExistMiddleware, protectedAdmin | Delete a user by ID (admin only) |
 
-Routes
-Admin Routes
-Method	Route	Middleware	Description
-GET	/admin	jwtExistMiddleware, protectedAdmin	Get all users (admin only)
-DELETE	/admin/:id	jwtExistMiddleware, protectedAdmin	Delete a user by ID (admin only)
-Setup / Installation
+---
 
-Clone repo
+## ⚙️ Setup / Installation
 
+### 1️⃣ Clone Repo
+
+```bash
 git clone https://github.com/NanmaranS/Admin-Panel.git
 cd Admin-Panel/backend
-
-
-Install dependencies
-
+2️⃣ Install Dependencies
 npm install
-
-
-Environment variables
-Create .env in backend:
+3️⃣ Environment Variables
+Create .env file in backend/:
 
 PORT=5001
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_jwt_secret
-
-
-Start server
-
+4️⃣ Start Server
 npm run dev
-
-
 Server will run at: http://localhost:5001
 
-Usage
-
+📝 Usage
 Only admin users can access /admin routes.
 
 JWT token must be sent in Authorization header:
 
 Authorization: Bearer <your_token_here>
-
-
-Example request to delete user:
-
+Example: Delete User
 DELETE /admin/USER_ID
 Authorization: Bearer <admin_token>
-
-
-Example request to get all users:
-
+Example: Get All Users
 GET /admin
 Authorization: Bearer <admin_token>
-
-Folder Structure
+📂 Folder Structure
 backend/
 ├─ src/
 │  ├─ Controllers/
@@ -90,9 +78,7 @@ backend/
 ├─ package.json
 ├─ .env
 └─ .gitignore
-
-Technologies
-
+🛠️ Technologies
 Node.js
 
 Express.js
@@ -101,10 +87,9 @@ MongoDB / Mongoose
 
 JWT Authentication
 
-Notes
-
+📝 Notes
 Make sure .env is never pushed to GitHub.
 
 Use .env.example for sharing environment variables.
 
-Admin token required for all admin routes.
+Admin token is required for all admin routes.
