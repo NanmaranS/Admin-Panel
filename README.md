@@ -59,7 +59,9 @@ Authorization: Bearer <admin_token>
 Example: Get All Users
 GET /admin
 Authorization: Bearer <admin_token>
-📂 Folder Structure
+```
+```
+## 📂 Folder Structure
 backend/
 ├─ src/
 │  ├─ Controllers/
@@ -78,16 +80,14 @@ backend/
 ├─ package.json
 ├─ .env
 └─ .gitignore
+```
 🛠️ Technologies
 Node.js
-
 Express.js
-
 MongoDB / Mongoose
-
 JWT Authentication
 
-📝 Notes
+##📝 Notes
 Make sure .env is never pushed to GitHub.
 
 Use .env.example for sharing environment variables.
