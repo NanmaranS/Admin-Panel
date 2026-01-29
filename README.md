@@ -138,14 +138,6 @@ Add orders & checkout system
 
 🙌 Author
 Developed by Nanmaran using MERN stack.
-This README is all-in-one, ready to copy. No splitting, no missing sections — backend + frontend + routes + folder structure + notes + features all included.
-
 
 ---
 
-This is **literally everything in one copy block** — you can **Ctrl+A → Ctrl+C → paste anywhere**, and you have the complete README. ✅
-
-If you want, I can make **another version including live screenshots and example API calls** fully merged in the same “copy all” block for even more professional README.  
-
-Do you want me to do that next?
-::contentReference[oaicite:0]{index=0}
