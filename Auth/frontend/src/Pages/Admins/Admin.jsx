@@ -23,7 +23,7 @@ axios.get('https://admin-panel-backend-094i.onrender.com/auth/admin',{
 .then((res)=>setadminDetail(res.data))
 .catch((err)=>{
    if (err.response && err.response.status === 400) {
-      alert("Only Admin Access This Access")  
+      alert("Only admins can access this page")  
       localStorage.removeItem("token") 
       window.location.href = '/'       
     } else {
