@@ -15,7 +15,7 @@ useEffect(()=>{
     alert("No token found. Please login again")
     return}
     
-axios.get('http://localhost:5001/auth/admin',{
+axios.get('https://admin-panel-backend-094i.onrender.com/auth/admin',{
   headers:{
      Authorization: `Bearer ${token}`
   }
@@ -34,7 +34,7 @@ axios.get('http://localhost:5001/auth/admin',{
 
 
 const deleteUser=(admin)=>{
-axios.delete(`http://localhost:5001/auth/admin/${admin._id}`,{
+axios.delete(`https://admin-panel-backend-094i.onrender.com/auth/admin/${admin._id}`,{
   headers:{
     Authorization:`Bearer ${token}`
   }
