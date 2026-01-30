@@ -7,7 +7,7 @@ import App from './App.jsx'
 
 const router=createBrowserRouter([
   {path:"/",element:<App/>},
-  {path:"/regsiter",element:<Register/>},
+  {path:"/register",element:<Register/>},
   {path:"/admin",element:<Admin/>}
 ])
 
