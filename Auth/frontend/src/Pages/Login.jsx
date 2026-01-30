@@ -60,7 +60,7 @@ axios.post('https://admin-panel-backend-094i.onrender.com/auth/login',{
   </div>
 <div className='text-center'>
 
-      <small> No account? <Link className='text-primary' to="/regsiter">Create one!</Link></small>
+      <small> No account? <Link className='text-primary' to="/register">Create one!</Link></small>
 </div>
   <div className='text-center'>
 
